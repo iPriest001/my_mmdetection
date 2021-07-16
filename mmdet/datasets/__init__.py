@@ -3,6 +3,7 @@ from .cityscapes import CityscapesDataset
 from .coco import CocoDataset
 from .custom import CustomDataset
 from .underwater import UnderwaterDataset
+from .dior import DIORDataset
 from .dataset_wrappers import (ClassBalancedDataset, ConcatDataset,
                                RepeatDataset)
 from .deepfashion import DeepFashionDataset
@@ -21,5 +22,5 @@ __all__ = [
     'DistributedSampler', 'build_dataloader', 'ConcatDataset', 'RepeatDataset',
     'ClassBalancedDataset', 'WIDERFaceDataset', 'DATASETS', 'PIPELINES',
     'build_dataset', 'replace_ImageToTensor', 'get_loading_pipeline',
-    'NumClassCheckHook', 'UnderwaterDataset'
+    'NumClassCheckHook', 'UnderwaterDataset', 'DIORDataset'
 ]
