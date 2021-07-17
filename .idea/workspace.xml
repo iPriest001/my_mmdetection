@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e220bc1a-4355-4e53-ae3c-e8a2a7be9c35" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/configs/_base_/models/retinanet_r50_fpn.py" beforeDir="false" afterPath="$PROJECT_DIR$/configs/_base_/models/retinanet_r50_fpn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mmdet/datasets/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mmdet/datasets/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mmdet/models/backbones/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/mmdet/models/backbones/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +29,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../paper_algorithm/Twins-main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../paper_algorithm/Swin-Transformer-Object-Detection" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyDebuggerOptionsProvider">
@@ -93,7 +91,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tools/train.py" />
-      <option name="PARAMETERS" value="configs/retinanet/retinanet_r50_fpn_1x_dior.py --work-dir $PROJECT_DIR$/train_model_fpn/dior_retinanet/ --gpus 1" />
+      <option name="PARAMETERS" value="configs/retinanet/retinanet_alt_gvt_s_fpn_1x_dior_pvt_setting.py --work-dir $PROJECT_DIR$/train_model_fpn/dior_retinanet_twins/ --gpus 1" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -141,26 +139,40 @@
       <option name="presentableId" value="Default" />
       <updated>1616052834793</updated>
     </task>
+    <task id="LOCAL-00001" summary="add dior dataset">
+      <created>1626420319526</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1626420319526</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/test1" />
     </ignored-roots>
+    <MESSAGE value="add dior dataset" />
+    <option name="LAST_COMMIT_MESSAGE" value="add dior dataset" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="700" y="211" width="1084" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626349431219">
+    <state x="700" y="211" width="1084" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1626431848911">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="700" y="211" width="1084" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1626349431219" />
+    <state x="700" y="211" width="1084" height="814" key="#com.intellij.execution.impl.EditConfigurationsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1626431848911" />
     <state x="614" y="118" width="345" height="610" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog" timestamp="1622043281674">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="614" y="118" width="345" height="610" key="#com.intellij.ide.ui.customization.CustomizableActionsPanel.FindAvailableActionsDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1622043281674" />
-    <state x="779" y="324" width="424" height="491" key="FileChooserDialogImpl" timestamp="1626356055946">
+    <state x="808" y="92" width="912" height="914" key="CommitChangelistDialog2" timestamp="1626420319445">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="779" y="324" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1626356055946" />
+    <state x="808" y="92" width="912" height="914" key="CommitChangelistDialog2/72.27.1848.1053@72.27.1848.1053" timestamp="1626420319445" />
+    <state x="779" y="324" width="424" height="491" key="FileChooserDialogImpl" timestamp="1626441360330">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="779" y="324" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053@72.27.1848.1053" timestamp="1626441360330" />
     <state x="721" y="422" width="540" height="269" key="Github.CreatePullRequestDialog" timestamp="1626349972467">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -173,42 +185,46 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="771" y="239" width="439" height="636" key="Github.UntrackedFilesDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1626277202417" />
-    <state width="1825" height="328" key="GridCell.Tab.0.bottom" timestamp="1626349585080">
+    <state width="1825" height="333" key="GridCell.Tab.0.bottom" timestamp="1626443684566">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="328" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1626349585080" />
-    <state width="1825" height="328" key="GridCell.Tab.0.center" timestamp="1626349585080">
+    <state width="1825" height="333" key="GridCell.Tab.0.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1626443684566" />
+    <state width="1825" height="333" key="GridCell.Tab.0.center" timestamp="1626443684564">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="328" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1626349585080" />
-    <state width="1825" height="328" key="GridCell.Tab.0.left" timestamp="1626349585079">
+    <state width="1825" height="333" key="GridCell.Tab.0.center/72.27.1848.1053@72.27.1848.1053" timestamp="1626443684564" />
+    <state width="1825" height="333" key="GridCell.Tab.0.left" timestamp="1626443684563">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="328" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1626349585079" />
-    <state width="1825" height="328" key="GridCell.Tab.0.right" timestamp="1626349585080">
+    <state width="1825" height="333" key="GridCell.Tab.0.left/72.27.1848.1053@72.27.1848.1053" timestamp="1626443684563" />
+    <state width="1825" height="333" key="GridCell.Tab.0.right" timestamp="1626443684565">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="328" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1626349585080" />
-    <state width="1825" height="324" key="GridCell.Tab.1.bottom" timestamp="1626245653809">
+    <state width="1825" height="333" key="GridCell.Tab.0.right/72.27.1848.1053@72.27.1848.1053" timestamp="1626443684565" />
+    <state width="1825" height="304" key="GridCell.Tab.1.bottom" timestamp="1626443599141">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="324" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1626245653809" />
-    <state width="1825" height="324" key="GridCell.Tab.1.center" timestamp="1626245653808">
+    <state width="1825" height="304" key="GridCell.Tab.1.bottom/72.27.1848.1053@72.27.1848.1053" timestamp="1626443599141" />
+    <state width="1825" height="304" key="GridCell.Tab.1.center" timestamp="1626443599141">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="324" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1626245653808" />
-    <state width="1825" height="324" key="GridCell.Tab.1.left" timestamp="1626245653808">
+    <state width="1825" height="304" key="GridCell.Tab.1.center/72.27.1848.1053@72.27.1848.1053" timestamp="1626443599141" />
+    <state width="1825" height="304" key="GridCell.Tab.1.left" timestamp="1626443599141">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="324" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1626245653808" />
-    <state width="1825" height="324" key="GridCell.Tab.1.right" timestamp="1626245653808">
+    <state width="1825" height="304" key="GridCell.Tab.1.left/72.27.1848.1053@72.27.1848.1053" timestamp="1626443599141" />
+    <state width="1825" height="304" key="GridCell.Tab.1.right" timestamp="1626443599141">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state width="1825" height="324" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1626245653808" />
-    <state x="319" y="218" width="1022" height="737" key="SettingsEditor" timestamp="1626356646078">
+    <state width="1825" height="304" key="GridCell.Tab.1.right/72.27.1848.1053@72.27.1848.1053" timestamp="1626443599141" />
+    <state x="319" y="218" width="1022" height="737" key="SettingsEditor" timestamp="1626440779711">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="319" y="218" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1626356646078" />
+    <state x="319" y="218" width="1022" height="737" key="SettingsEditor/72.27.1848.1053@72.27.1848.1053" timestamp="1626440779711" />
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1626420329545">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="591" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1848.1053@72.27.1848.1053" timestamp="1626420329545" />
     <state width="895" height="523" key="XDebugger.FullValuePopup" timestamp="1623145242809">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -225,10 +241,10 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="172" y="127" width="1648" height="853" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/72.27.1848.1053@72.27.1848.1053" timestamp="1621337020100" />
-    <state x="532" y="265" width="917" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1623144814828">
+    <state x="532" y="265" width="917" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1626443399662">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="532" y="265" width="917" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/72.27.1848.1053@72.27.1848.1053" timestamp="1623144814828" />
+    <state x="532" y="265" width="917" height="583" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/72.27.1848.1053@72.27.1848.1053" timestamp="1626443399662" />
     <state x="659" y="259" width="672" height="678" key="search.everywhere.popup" timestamp="1626251878945">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
@@ -298,11 +314,6 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/train.py</url>
-          <line>157</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/mmdet/models/detectors/single_stage.py</url>
           <line>26</line>
           <option name="timeStamp" value="24" />
@@ -331,11 +342,6 @@
           <url>file://$PROJECT_DIR$/mmdet/models/necks/fpt.py</url>
           <line>404</line>
           <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/mmdet/models/detectors/single_stage.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/demo/image_demo.py</url>
@@ -386,6 +392,16 @@
           <url>file://$PROJECT_DIR$/../anaconda3/envs/mmlab2/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py</url>
           <line>124</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mmdet/models/detectors/single_stage.py</url>
+          <line>53</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mmdet/models/detectors/single_stage.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
