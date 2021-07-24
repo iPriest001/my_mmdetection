@@ -10,6 +10,7 @@ BatchNorm2d = nn.BatchNorm2d
 
 from dropblock import DropBlock2D
 from ..builder import NECKS
+from mmcv.runner import (auto_fp16, force_fp32,)
 
 # factorized attention !!!!!!!
 
@@ -150,7 +151,7 @@ class FPT_v(nn.Module):
 class SelfTrans(nn.Module):
     def __init__(self, n_head, n_mix, d_model, d_k, d_v,
                  norm_layer=BatchNorm2d, kq_transform='conv', value_transform='conv',
-                 pooling=True, concat=False, dropout=0.1):
+                 pooling=True, concat=False, dropout=0.1, ws=7):
         super(SelfTrans, self).__init__()
 
         self.n_head = n_head
@@ -160,6 +161,7 @@ class SelfTrans(nn.Module):
 
         self.pooling = pooling
         self.concat = concat
+        self.ws = ws
 
         if self.pooling:
             self.pool = nn.AvgPool2d(3, 2, 1, count_include_pad=False)
